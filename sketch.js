@@ -51,7 +51,6 @@ function draw() {
     color(198, 0, 0),
     color(142, 0, 0),
     color(116, 0, 0),
-    color(70, 0, 0),
     color(0, 0, 0),
   ];
 
@@ -71,15 +70,10 @@ function draw() {
     if ((val < 10000) & (val >= 5000)) fill(colors[1]);
     if ((val < 50000) & (val >= 10000)) fill(colors[2]);
     if ((val < 100000) & (val >= 50000)) fill(colors[3]);
-
     if ((val < 500000) & (val >= 100000)) fill(colors[4]);
     if ((val < 1000000) & (val >= 500000)) fill(colors[5]);
     if ((val < 5000000) & (val >= 1000000)) fill(colors[6]);
-    // if ((val < 5000000) & (val >= 2500000)) fill(colors[7]);
-
-    // if ((val < 6000000) & (val >= 5000000)) fill(colors[8]);
-
-    if (val >= 5000000) fill(colors[8]);
+    if (val >= 5000000) fill(colors[7]);
     stroke(color(190, 190, 190));
     rect(x, y, width, height);
 
@@ -113,7 +107,7 @@ function draw() {
   for (let i = 0; i < colors.length; i++) {
     fill(colors[i]);
     stroke(color(190, 190, 190));
-    square(1220, startX + 50 + (i * width) / 2, height / 2);
+    square(1220, startX + 50 + (i * width) / 1.75, height / 2);
     noStroke();
     fill(150, 150, 150);
     textSize(14);
